@@ -39,8 +39,8 @@ public class GameManager : MonoBehaviour
                 playerAudioSource1.clip = mortalInstants;
                 playerAudioSource1.Play();
                 playerAudioSource1.loop = true;
-                playerAudioSource2.clip = emetLines;
-                playerAudioSource2.Play();
+                //playerAudioSource2.clip = emetLines;
+                //playerAudioSource2.Play();
                 spawner.shouldSpawn = true;
                 light1.gameObject.SetActive(false);
                 light2.gameObject.SetActive(true);

@@ -23,7 +23,7 @@ public class Meteor : MonoBehaviour
         if (other.gameObject.layer == 7)
         {
             Cursor.lockState = CursorLockMode.None;
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
     }
 }

@@ -3,7 +3,22 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - paper
+  - notInteractable
+  - Poster
+  - impact
+  - letter
+  - frame
+  - light
+  - reticle
+  - lightningCrack
+  - lamp
+  - picture
+  - dreamChair
+  - Radio
+  - lightning
+  - endDream
   layers:
   - Default
   - TransparentFX

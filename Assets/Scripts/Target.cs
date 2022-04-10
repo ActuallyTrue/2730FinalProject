@@ -195,7 +195,7 @@ public class Target : MonoBehaviour
         } else if(objSelected && selObj.CompareTag("dreamChair")){
             chairCreak.Play();
             objSelected = false;
-            SceneManager.LoadScene("AwakeNew");
+            SceneManager.LoadScene("Game");
         } else if(objSelected && selObj.CompareTag("awakeChair")){
             chairCreak.Play();
             objSelected = false;

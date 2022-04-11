@@ -611,8 +611,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b66fdf68ccf7804a8a2e046d305247e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroid1: {fileID: 3206874544964003683, guid: 8442ea73ef5ccd040820be0010e014df, type: 3}
-  asteroid2: {fileID: 4796427517512072454, guid: 5954083445f2c5f4d92e1710970b9c9c, type: 3}
+  asteroid1: {fileID: 6917949539097725656, guid: c5ae89366afa4454dba63ee8eebce59a, type: 3}
+  asteroid2: {fileID: 6213593348106879186, guid: c682518da3271b841a2ff44d6eb960db, type: 3}
   boxCollider: {fileID: 395668123}
   shouldSpawn: 0
 --- !u!65 &395668123

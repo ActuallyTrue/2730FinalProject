@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
     {
         currentState = GameState.chill;
         spawner = FindObjectOfType<MeteorSpawner>();
+        CollectibleManager manager = FindObjectOfType<CollectibleManager>();
+        manager.CorrectCollectibles();
     }
 
     // Update is called once per frame

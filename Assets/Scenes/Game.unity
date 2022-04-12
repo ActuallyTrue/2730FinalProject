@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 45056863}
   - component: {fileID: 45056862}
   - component: {fileID: 45056861}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Plane (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -287,7 +287,7 @@ GameObject:
   - component: {fileID: 132182930}
   m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -407,7 +407,7 @@ MonoBehaviour:
   grounded: 0
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 576
+    m_Bits: 128
   counterMovement: 0.175
   maxSlopeAngle: 35
   slideForce: 400
@@ -521,6 +521,71 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cbd8044575760445a7f454c531adbf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &237184931
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 599115365466458697, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_Name
+      value: Collectible (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3272312402843659146, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: collectibleNum
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2042
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 452.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 105.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -138.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
 --- !u!1 &241626622
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,7 +846,7 @@ GameObject:
   - component: {fileID: 641647267}
   - component: {fileID: 641647266}
   - component: {fileID: 641647265}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Plane (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1349,7 +1414,7 @@ GameObject:
   - component: {fileID: 1486474544}
   - component: {fileID: 1486474543}
   - component: {fileID: 1486474542}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Plane (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1590,7 +1655,7 @@ GameObject:
   - component: {fileID: 1573599114}
   - component: {fileID: 1573599113}
   - component: {fileID: 1573599112}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1686,7 +1751,7 @@ GameObject:
   - component: {fileID: 1762609709}
   - component: {fileID: 1762609708}
   - component: {fileID: 1762609707}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Plane (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1782,7 +1847,7 @@ GameObject:
   - component: {fileID: 4676731704341125925}
   - component: {fileID: 9213019959677184469}
   - component: {fileID: 25902503230416305}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: LeftSpire.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1828,7 +1893,7 @@ GameObject:
   - component: {fileID: 5072034831175931187}
   - component: {fileID: 5730692478340519873}
   - component: {fileID: 956366362816994555}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: BezierCircle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1910,7 +1975,7 @@ GameObject:
   - component: {fileID: 3127543771299812649}
   - component: {fileID: 4934900830187219523}
   - component: {fileID: 340226169381490901}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Big Spire Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1984,7 +2049,7 @@ GameObject:
   - component: {fileID: 4952273161448033384}
   - component: {fileID: 709521292155898004}
   - component: {fileID: 420724497023918685}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Right Spire.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2017,7 +2082,7 @@ GameObject:
   - component: {fileID: 2378991990468966706}
   - component: {fileID: 8604699206091035471}
   - component: {fileID: 442620548723834334}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: RightSpire.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2050,7 +2115,7 @@ GameObject:
   - component: {fileID: 2993924197212203223}
   - component: {fileID: 4832314618133513731}
   - component: {fileID: 451598915060714474}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: LeftSpire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2099,7 +2164,7 @@ GameObject:
   - component: {fileID: 7873601887376023507}
   - component: {fileID: 3956896831248895957}
   - component: {fileID: 541086508058986062}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: City.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2541,7 +2606,7 @@ GameObject:
   - component: {fileID: 7238747021058748852}
   - component: {fileID: 898923926439619853}
   - component: {fileID: 1212052048853056649}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: RightSpire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2826,7 +2891,7 @@ GameObject:
   - component: {fileID: 2429448133782748322}
   - component: {fileID: 1634612813606720641}
   - component: {fileID: 1726608093659935479}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: RightSpire.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2859,7 +2924,7 @@ GameObject:
   - component: {fileID: 9054463328578431808}
   - component: {fileID: 6076877584599778670}
   - component: {fileID: 1793959144598529615}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: City.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3004,7 +3069,7 @@ GameObject:
   - component: {fileID: 529038209981622048}
   - component: {fileID: 6317557632795100846}
   - component: {fileID: 2160604073206237527}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Left Spire.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3080,6 +3145,67 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &2359076455516074445
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 599115365466458697, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_Name
+      value: Collectible
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2042
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 452.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 105.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -179.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740599002778843355, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d7e84d02b71ce3c45811ee5cf7ee57f2, type: 3}
 --- !u!33 &2378991990468966706
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3100,7 +3226,7 @@ GameObject:
   - component: {fileID: 3586594172798128787}
   - component: {fileID: 4979474404519211895}
   - component: {fileID: 2410927280012141070}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Left Spire.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3149,7 +3275,7 @@ GameObject:
   - component: {fileID: 9029043663543574387}
   - component: {fileID: 2212848987111414777}
   - component: {fileID: 2592845095219397573}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Right Spire.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3183,7 +3309,7 @@ GameObject:
   - component: {fileID: 8986642746097318048}
   - component: {fileID: 2671107348049061945}
   - component: {fileID: 2671107348049061946}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: City.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3230,7 +3356,7 @@ GameObject:
   - component: {fileID: 2042835449791323770}
   - component: {fileID: 1821115588764962465}
   - component: {fileID: 2772533723287183182}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Right Spire.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3422,7 +3548,7 @@ GameObject:
   - component: {fileID: 3227982209868582737}
   - component: {fileID: 6706273812105769963}
   - component: {fileID: 3062009149416029866}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Left Spire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3463,7 +3589,7 @@ GameObject:
   - component: {fileID: 4896535338280150082}
   - component: {fileID: 1599358421579484644}
   - component: {fileID: 3086624467444934459}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Left Spire.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3995,7 +4121,7 @@ GameObject:
   - component: {fileID: 5397546986404235529}
   - component: {fileID: 5963144785607036086}
   - component: {fileID: 5158376903602543830}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Right Spire.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4056,7 +4182,7 @@ GameObject:
   - component: {fileID: 1706835950675361331}
   - component: {fileID: 5883905611341709857}
   - component: {fileID: 5215324052417560338}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Left Spire.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4089,7 +4215,7 @@ GameObject:
   - component: {fileID: 8189019539429563520}
   - component: {fileID: 3030644943059583643}
   - component: {fileID: 5290092887979199478}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: City.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4158,7 +4284,7 @@ GameObject:
   - component: {fileID: 6243911772768554124}
   - component: {fileID: 4820243461883995534}
   - component: {fileID: 5570766076009640699}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: LeftSpire.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4191,7 +4317,7 @@ GameObject:
   - component: {fileID: 8271636505550521851}
   - component: {fileID: 2925922724962267898}
   - component: {fileID: 5716527921350687510}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Left Spire.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4232,7 +4358,7 @@ GameObject:
   - component: {fileID: 575242766468230632}
   - component: {fileID: 368702152785565098}
   - component: {fileID: 5751853708331884887}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: City.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4306,7 +4432,7 @@ GameObject:
   - component: {fileID: 216902234147322092}
   - component: {fileID: 544774079707543668}
   - component: {fileID: 5912986674704461317}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: City.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4421,7 +4547,7 @@ GameObject:
   - component: {fileID: 1359759723088759016}
   - component: {fileID: 2105981104660278978}
   - component: {fileID: 6124679040741915602}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: City.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4454,7 +4580,7 @@ GameObject:
   - component: {fileID: 480271227697165179}
   - component: {fileID: 1529299195478460855}
   - component: {fileID: 6148953637182651970}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: City
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4528,7 +4654,7 @@ GameObject:
   - component: {fileID: 1824659283463682191}
   - component: {fileID: 8737739219757918199}
   - component: {fileID: 6240874905412374362}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Big Spire Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4618,7 +4744,7 @@ GameObject:
   - component: {fileID: 6515871622171892893}
   - component: {fileID: 8754724922442623889}
   - component: {fileID: 6625639225398081855}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Right Spire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4720,7 +4846,7 @@ GameObject:
   - component: {fileID: 3084303247888964589}
   - component: {fileID: 8393828399337529022}
   - component: {fileID: 7041011319866636798}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: City.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4758,7 +4884,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8054177899618746690}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: AmaurotAttempt2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4805,7 +4931,7 @@ GameObject:
   - component: {fileID: 1519193752796517571}
   - component: {fileID: 190444664999598298}
   - component: {fileID: 7650699447772296953}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Left Spire.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4838,7 +4964,7 @@ GameObject:
   - component: {fileID: 798191964999183399}
   - component: {fileID: 3581214059667847959}
   - component: {fileID: 7863253604372795714}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: RightSpire.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4958,7 +5084,7 @@ GameObject:
   - component: {fileID: 1322600190646032562}
   - component: {fileID: 6198801201042915152}
   - component: {fileID: 8355801094525250522}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Left Spire.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5032,7 +5158,7 @@ GameObject:
   - component: {fileID: 4786044971812716798}
   - component: {fileID: 2891812699338852382}
   - component: {fileID: 8426259712924590058}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: City.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5065,7 +5191,7 @@ GameObject:
   - component: {fileID: 625523081365439137}
   - component: {fileID: 4299902640236045047}
   - component: {fileID: 8462827367382865706}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: RightSpire.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5111,7 +5237,7 @@ GameObject:
   - component: {fileID: 3180594626298004125}
   - component: {fileID: 3162320342969940126}
   - component: {fileID: 8813796368725263475}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 5104540296833708833}
   - component: {fileID: 5678901988289449619}
   - component: {fileID: 2992119315872923380}
-  m_Layer: 0
+  - component: {fileID: 4800441054064862679}
+  m_Layer: 6
   m_Name: pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,3 +99,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &4800441054064862679
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6213593348106879186}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.59111154
+  m_Center: {x: 0.013815638, y: -0.0738195, z: -0.16153696}

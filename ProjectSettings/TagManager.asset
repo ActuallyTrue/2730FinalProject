@@ -19,6 +19,8 @@ TagManager:
   - Radio
   - lightning
   - endDream
+  - rainSign
+  - awakeChair
   layers:
   - Default
   - TransparentFX
@@ -26,9 +28,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Meteor
+  - Ground
+  - Building
   - 
   - 
   - 

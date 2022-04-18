@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18884689, g: 0.219037, b: 0.24241176, a: 1}
+  m_IndirectSpecularColor: {r: 0.18900159, g: 0.21908605, b: 0.24243343, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 132182923}
   - component: {fileID: 132182928}
   - component: {fileID: 132182929}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -612,7 +612,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 265374465}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Orientation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -704,7 +704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 520436053}
   - component: {fileID: 520436054}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: AudioSource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1368,7 +1368,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1210413718}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2509,7 +2509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whatIsGrappleable:
     serializedVersion: 2
-    m_Bits: 576
+    m_Bits: 384
   gunTip: {fileID: 241626623}
   camera: {fileID: 963194228}
   player: {fileID: 132182927}
@@ -4872,7 +4872,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8054177899618746690}
   m_Layer: 8
-  m_Name: AmaurotAttempt2
+  m_Name: City
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

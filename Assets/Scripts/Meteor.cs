@@ -20,10 +20,10 @@ public class Meteor : MonoBehaviour
     }
 
     private void OnCollisionStay(Collision other) {
-        if (other.gameObject.layer == 7)
+        if (other.gameObject.CompareTag("Player"))
         {
             Cursor.lockState = CursorLockMode.None;
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("DreamNew");
         }
     }
 }

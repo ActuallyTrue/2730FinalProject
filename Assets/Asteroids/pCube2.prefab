@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5678901988289449619}
   - component: {fileID: 2992119315872923380}
   - component: {fileID: 4800441054064862679}
+  - component: {fileID: -4082274735565239729}
   m_Layer: 6
   m_Name: pCube2
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 6213593348106879186}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 76.14898, z: 725.3077}
-  m_LocalScale: {x: -143.66788, y: -143.66788, z: -143.66788}
+  m_LocalScale: {x: -71.83395, y: -71.83395, z: -71.83395}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -112,3 +113,15 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.59111154
   m_Center: {x: 0.013815638, y: -0.0738195, z: -0.16153696}
+--- !u!114 &-4082274735565239729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6213593348106879186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d4235e4072da141963e9fccdcc85d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

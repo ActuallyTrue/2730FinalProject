@@ -21,6 +21,7 @@ TagManager:
   - endDream
   - rainSign
   - awakeChair
+  - dreamPainting
   layers:
   - Default
   - TransparentFX

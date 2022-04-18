@@ -82,7 +82,7 @@ public class Target : MonoBehaviour
     }
     
     private void OnMouseDown(){
-        if(objSelected && selObj.CompareTag("Poster")){
+        if(objSelected && selObj.CompareTag("badInspiration")){
             putItem.Play();
             reticle.SetActive(false);
             renderer.material.color = baseColor;
@@ -99,7 +99,7 @@ public class Target : MonoBehaviour
             camHoldingRot.x = 0;
             camera.transform.eulerAngles = camHoldingRot;
             camera.GetComponent<FirstPersonLook>().enabled = false;
-        } else if(objSelected && selObj.CompareTag("rainSign")){
+        } else if(objSelected && selObj.CompareTag("goodInspiration")){
             putItem.Play();
             reticle.SetActive(false);
             renderer.material.color = baseColor;
@@ -116,60 +116,7 @@ public class Target : MonoBehaviour
             camHoldingRot.x = 0;
             camera.transform.eulerAngles = camHoldingRot;
             camera.GetComponent<FirstPersonLook>().enabled = false;
-        }else if(objSelected && selObj.CompareTag("paper")){
-            reticle.SetActive(false);
-            paper.Play();
-            renderer.material.color = baseColor;
-            looking = true;
-            holdingPos = player.transform.position + player.transform.TransformDirection(new Vector3(0,(player.transform.localScale.y) + 1.35f,0.5f));
-            holdingRot = player.transform.eulerAngles;
-            holdingRot.x +=90;
-            holdingRot.y += 180;
-            selObj.transform.position = holdingPos;
-            selObj.transform.eulerAngles = holdingRot;
-            player.GetComponent<FirstPersonMovement>().enabled = false;
-            camRot = camera.transform.eulerAngles;
-            camHoldingRot = camRot;
-            camHoldingRot.x = 0;
-            camera.transform.eulerAngles = camHoldingRot;
-            camera.GetComponent<FirstPersonLook>().enabled = false;
-        } else if(objSelected && selObj.CompareTag("letter")){
-            reticle.SetActive(false);
-            paper.Play();
-            renderer.material.color = baseColor;
-            looking = true;
-            holdingPos = player.transform.position + player.transform.TransformDirection(new Vector3(0,(player.transform.localScale.y) + 1.35f,1.5f));
-            holdingRot = player.transform.eulerAngles;
-            holdingRot.x +=90;
-            holdingRot.y += 180;
-            selObj.transform.position = holdingPos;
-            selObj.transform.eulerAngles = holdingRot;
-            player.GetComponent<FirstPersonMovement>().enabled = false;
-            camRot = camera.transform.eulerAngles;
-            camHoldingRot = camRot;
-            camHoldingRot.x = 0;
-            camera.transform.eulerAngles = camHoldingRot;
-            camera.GetComponent<FirstPersonLook>().enabled = false;
-        } else if(objSelected && selObj.CompareTag("frame")){
-            putItem.Play();
-            reticle.SetActive(false);
-            renderer.material.color = baseColor;
-            looking = true;
-            holdingPos = player.transform.position + player.transform.TransformDirection(new Vector3(0,(player.transform.localScale.y) + 1.35f,1f));
-            holdingRot = player.transform.eulerAngles;
-            holdingRot.y += 180;
-            selObj = GameObject.FindWithTag("picture");
-            basePos = selObj.transform.position;
-            baseRot = selObj.transform.eulerAngles;
-            selObj.transform.position = holdingPos;
-            selObj.transform.eulerAngles = holdingRot;
-            player.GetComponent<FirstPersonMovement>().enabled = false;
-            camRot = camera.transform.eulerAngles;
-            camHoldingRot = camRot;
-            camHoldingRot.x = 0;
-            camera.transform.eulerAngles = camHoldingRot;
-            camera.GetComponent<FirstPersonLook>().enabled = false;
-        } else if(objSelected && selObj.CompareTag("lamp")){
+        }else if(objSelected && selObj.CompareTag("lamp")){
             lamp.Play();
             if(lightOn){
                 light.enabled = false;
@@ -199,7 +146,7 @@ public class Target : MonoBehaviour
         } else if(objSelected && selObj.CompareTag("awakeChair")){
             chairCreak.Play();
             objSelected = false;
-            SceneManager.LoadScene("DreamNew");
+            SceneManager.LoadScene("Game");
         }
     }
 

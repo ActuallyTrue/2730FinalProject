@@ -15,7 +15,7 @@ public class SceneTimer : MonoBehaviour
     void Update()
     {
         if(Time.timeSinceLevelLoad >= 10){
-            SceneManager.LoadScene("DreamNew");
+            SceneManager.LoadScene("AwakeNew");
         }
     }
 }

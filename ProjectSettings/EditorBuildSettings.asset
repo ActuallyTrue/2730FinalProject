@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/DreamNew.unity
-    guid: 63f4da7e898bdcc4fac0f3c02486d239
-  - enabled: 1
     path: Assets/Scenes/AwakeNew.unity
     guid: 497741eed6893fc4da870c597e0cee17
   - enabled: 1

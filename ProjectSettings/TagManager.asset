@@ -22,6 +22,8 @@ TagManager:
   - rainSign
   - awakeChair
   - dreamPainting
+  - badInspo
+  - goodInspo
   layers:
   - Default
   - TransparentFX

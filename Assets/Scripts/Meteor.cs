@@ -23,7 +23,7 @@ public class Meteor : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Cursor.lockState = CursorLockMode.None;
-            SceneManager.LoadScene("DreamNew");
+            SceneManager.LoadScene("AwakeNew");
         }
     }
 }

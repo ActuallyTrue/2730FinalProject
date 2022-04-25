@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdd5faa8ea164fb49b3c541ba45d2e5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectibleNum: 4
+  collectibleNum: 2
 --- !u!1 &2674323620601728747
 GameObject:
   m_ObjectHideFlags: 0

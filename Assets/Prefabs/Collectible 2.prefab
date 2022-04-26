@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d6d33791aaa1794469ab5e165eabe9f3, type: 2}
+  - {fileID: 2100000, guid: 7c9cbaaf494b0104b9d82fc45376e62c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 2117751408788432233}
   - component: {fileID: 3952136855971059240}
   m_Layer: 0
-  m_Name: Collectible 64
+  m_Name: Collectible 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdd5faa8ea164fb49b3c541ba45d2e5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectibleNum: 4
+  collectibleNum: 2
 --- !u!1 &2674323620601728747
 GameObject:
   m_ObjectHideFlags: 0

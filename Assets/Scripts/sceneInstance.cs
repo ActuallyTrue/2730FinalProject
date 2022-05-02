@@ -15,11 +15,19 @@ public class sceneInstance : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        paintSlices.Add(paint1);
+        paintSlices.Add(paint2);
+        paintSlices.Add(paint3);
+        paintSlices.Add(paint4);
+        paintSlices.Add(paint5);
+        paintSlices.Add(paint6);
         List<int> collectedCollectibles = collectibleController.GetComponent<CollectibleManager>().collectedCollectibles;
-        for(int i = 0; i < collectedCollectibles.Count; i++){
-            
+        if(collectedCollectibles.Count > 0 && collectedCollectibles.Count < 6){
+            for(int i = 0; i < collectedCollectibles.Count; i++){
+                paintSlices[collectedCollectibles[i]].GetComponent<MeshRenderer>().enabled = true;
+            }
         }
+        
     }
 
 

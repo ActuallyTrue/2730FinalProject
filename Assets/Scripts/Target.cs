@@ -23,9 +23,7 @@ public class Target : MonoBehaviour
     public AudioSource lamp;
     public AudioSource radio;
     public AudioSource radioSound;
-    public AudioSource paper;
     public AudioSource putItem;
-    public AudioSource chairCreak;
     public GameObject reticle;
     Light light;
     
@@ -47,11 +45,9 @@ public class Target : MonoBehaviour
             lightOn = false;
         }
         lamp = camera.transform.Find("lamp").GetComponent<AudioSource>();
-        paper = camera.transform.Find("paper").GetComponent<AudioSource>();
         radio = camera.transform.Find("radio").GetComponent<AudioSource>();
         radioSound = camera.transform.Find("radioSound").GetComponent<AudioSource>();
         putItem = camera.transform.Find("putItem").GetComponent<AudioSource>();
-        chairCreak = camera.transform.Find("ChairCreak").GetComponent<AudioSource>();
         reticle = GameObject.FindWithTag("reticle");
         radioOn = true;
         radio.Play();
@@ -60,17 +56,6 @@ public class Target : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(objSelected){
-            if(Input.GetKeyDown(KeyCode.Escape)){
-                selObj.transform.position = basePos;
-                selObj.transform.eulerAngles = baseRot;
-                player.GetComponent<FirstPersonMovement>().enabled = true;
-                camera.GetComponent<FirstPersonLook>().enabled = true;
-                camera.transform.eulerAngles = camRot;
-                looking = false;
-                reticle.SetActive(true);
-            }
-        }
     }
 
     private void OnMouseEnter(){
@@ -78,44 +63,15 @@ public class Target : MonoBehaviour
             renderer.material.color = new Color(0.2f,1f,0.2f,0.3f);
         }
         objSelected = true;
-        Debug.Log(renderer.material.color);
     }
     
     private void OnMouseDown(){
-        if(objSelected && selObj.CompareTag("badInspiration")){
+        if(objSelected && selObj.CompareTag("badInspo")){
             putItem.Play();
-            reticle.SetActive(false);
-            renderer.material.color = baseColor;
-            looking = true;
-            holdingPos = player.transform.position + player.transform.TransformDirection(new Vector3(0,(player.transform.localScale.y) + 1.35f,1.5f));
-            holdingRot = player.transform.eulerAngles;
-            holdingRot.x *= 0.5f;
-            holdingRot.y += 180;
-            selObj.transform.position = holdingPos;
-            selObj.transform.eulerAngles = holdingRot;
-            player.GetComponent<FirstPersonMovement>().enabled = false;
-            camRot = camera.transform.eulerAngles;
-            camHoldingRot = camRot;
-            camHoldingRot.x = 0;
-            camera.transform.eulerAngles = camHoldingRot;
-            camera.GetComponent<FirstPersonLook>().enabled = false;
-        } else if(objSelected && selObj.CompareTag("goodInspiration")){
+           
+        } else if(objSelected && selObj.CompareTag("goodInspo")){
             putItem.Play();
-            reticle.SetActive(false);
-            renderer.material.color = baseColor;
-            looking = true;
-            holdingPos = player.transform.position + player.transform.TransformDirection(new Vector3(0,(player.transform.localScale.y) + 1.35f,3f));
-            holdingRot = player.transform.eulerAngles;
-            holdingRot.x *= 0.5f;
-            holdingRot.y += 180;
-            selObj.transform.position = holdingPos;
-            selObj.transform.eulerAngles = holdingRot;
-            player.GetComponent<FirstPersonMovement>().enabled = false;
-            camRot = camera.transform.eulerAngles;
-            camHoldingRot = camRot;
-            camHoldingRot.x = 0;
-            camera.transform.eulerAngles = camHoldingRot;
-            camera.GetComponent<FirstPersonLook>().enabled = false;
+        
         }else if(objSelected && selObj.CompareTag("lamp")){
             lamp.Play();
             if(lightOn){
@@ -139,12 +95,7 @@ public class Target : MonoBehaviour
                 radioOn = true;
                 //play radio on sound
             }
-        } else if(objSelected && selObj.CompareTag("dreamChair")){
-            chairCreak.Play();
-            objSelected = false;
-            SceneManager.LoadScene("Game");
-        } else if(objSelected && selObj.CompareTag("awakeChair")){
-            chairCreak.Play();
+        }else if(objSelected && selObj.CompareTag("awakeChair")){
             objSelected = false;
             SceneManager.LoadScene("Game");
         }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4430404, g: 0.457366, b: 0.47031575, a: 1}
+  m_IndirectSpecularColor: {r: 0.4430002, g: 0.45736527, b: 0.47027218, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1315,7 +1315,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &544105478
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1336,7 +1336,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544105477}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1603,7 +1603,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &637213502
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1624,7 +1624,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637213501}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2229,7 +2229,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &769506914
 Transform:
   m_ObjectHideFlags: 0
@@ -2264,7 +2264,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769506913}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2527,7 +2527,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &834237842
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2548,7 +2548,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834237841}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2809,13 +2809,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selObj: {fileID: 13385339288284586}
-  lamp: {fileID: 0}
-  radio: {fileID: 0}
-  radioSound: {fileID: 0}
-  paper: {fileID: 0}
-  putItem: {fileID: 0}
-  chairCreak: {fileID: 0}
-  reticle: {fileID: 0}
+  lamp: {fileID: 1285106275}
+  radio: {fileID: 1515204765}
+  radioSound: {fileID: 1693333230}
+  putItem: {fileID: 1819957744}
+  reticle: {fileID: 1270253387}
 --- !u!64 &893636053
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2848,7 +2846,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &905321926
 Transform:
   m_ObjectHideFlags: 0
@@ -2883,7 +2881,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905321925}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2973,7 +2971,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &1011384725
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2994,7 +2992,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1011384724}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3481,7 +3479,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &1174422569
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3502,7 +3500,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174422568}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3611,7 +3609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c27fe3d6fc19d4c40920b601940ac2e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectibleController: {fileID: 0}
+  collectibleController: {fileID: 787750795}
   paint1: {fileID: 1011384724}
   paint2: {fileID: 544105477}
   paint3: {fileID: 637213501}
@@ -3838,7 +3836,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &1305416295
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3859,7 +3857,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1305416294}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3915,49 +3913,6 @@ Transform:
   m_Father: {fileID: 1263008628}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -5.787, y: -180, z: 0}
---- !u!1 &1315632405
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1315632407}
-  - component: {fileID: 1315632406}
-  m_Layer: 0
-  m_Name: CollectibleManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1315632406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1315632405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4f0ecb2f77b372488c619b181cae30b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1315632407
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1315632405}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 470.9159, y: 120.40161, z: -166.8015}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1422657649
 GameObject:
   m_ObjectHideFlags: 0
@@ -6058,13 +6013,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selObj: {fileID: 1955155779}
-  lamp: {fileID: 0}
-  radio: {fileID: 0}
-  radioSound: {fileID: 0}
-  paper: {fileID: 0}
-  putItem: {fileID: 0}
-  chairCreak: {fileID: 0}
-  reticle: {fileID: 0}
+  lamp: {fileID: 1285106275}
+  radio: {fileID: 1515204765}
+  radioSound: {fileID: 1693333230}
+  putItem: {fileID: 1819957744}
+  reticle: {fileID: 1270253387}
 --- !u!1 &1986324598
 GameObject:
   m_ObjectHideFlags: 0
@@ -6204,6 +6157,7 @@ GameObject:
   - component: {fileID: 2009749019}
   - component: {fileID: 2009749018}
   - component: {fileID: 2009749017}
+  - component: {fileID: 2009749021}
   m_Layer: 0
   m_Name: goodInspiration
   m_TagString: goodInspo
@@ -6287,6 +6241,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!114 &2009749021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009749016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9500d8d55827a541876b934512c139f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selObj: {fileID: 2009749016}
+  lamp: {fileID: 1285106275}
+  radio: {fileID: 1515204765}
+  radioSound: {fileID: 1693333230}
+  putItem: {fileID: 1819957744}
+  reticle: {fileID: 1270253387}
 --- !u!1 &2009887656
 GameObject:
   m_ObjectHideFlags: 0
@@ -6299,6 +6271,7 @@ GameObject:
   - component: {fileID: 2009887659}
   - component: {fileID: 2009887658}
   - component: {fileID: 2009887657}
+  - component: {fileID: 2009887661}
   m_Layer: 0
   m_Name: badInspiration
   m_TagString: badInspo
@@ -6382,6 +6355,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!114 &2009887661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009887656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9500d8d55827a541876b934512c139f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selObj: {fileID: 2009887656}
+  lamp: {fileID: 1285106275}
+  radio: {fileID: 1515204765}
+  radioSound: {fileID: 1693333230}
+  putItem: {fileID: 1819957744}
+  reticle: {fileID: 1270253387}
 --- !u!1 &2031550927
 GameObject:
   m_ObjectHideFlags: 0
@@ -6662,7 +6653,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &2145240500
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6683,7 +6674,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2145240499}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -6772,13 +6763,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selObj: {fileID: 1186987933683668}
-  lamp: {fileID: 0}
-  radio: {fileID: 0}
-  radioSound: {fileID: 0}
-  paper: {fileID: 0}
-  putItem: {fileID: 0}
-  chairCreak: {fileID: 0}
-  reticle: {fileID: 0}
+  lamp: {fileID: 1285106275}
+  radio: {fileID: 1515204765}
+  radioSound: {fileID: 1693333230}
+  putItem: {fileID: 1819957744}
+  reticle: {fileID: 1270253387}
 --- !u!4 &4255461013152670
 Transform:
   m_ObjectHideFlags: 0

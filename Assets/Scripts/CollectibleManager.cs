@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollectibleManager : MonoBehaviour
 {
-    List<int> collectedCollectibles;
+    public List<int> collectedCollectibles;
 
     void Awake()
     {

@@ -31,7 +31,7 @@ public class FirstPersonLook : MonoBehaviour
         frameVelocity = Vector2.Lerp(frameVelocity, rawFrameVelocity, 1 / smoothing);
         velocity += frameVelocity;
         velocity.y = Mathf.Clamp(velocity.y, -60, 60);
-        velocity.x = Mathf.Clamp(velocity.x, -60, 60);
+        //velocity.x = Mathf.Clamp(velocity.x, -60, 60);
         
       
 

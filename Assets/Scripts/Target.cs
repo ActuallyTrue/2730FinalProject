@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Target : MonoBehaviour
 {
+    public GameObject finalPaint;
+    public GameObject finalPaintGood;
+    public GameObject finalPaintBad;
     private Renderer renderer;
     private Color baseColor;
     public GameObject selObj;
@@ -21,15 +24,27 @@ public class Target : MonoBehaviour
     private bool lightOn;
     private bool radioOn;
     public AudioSource lamp;
-    public AudioSource radio;
+    public AudioSource radio1;
+    public AudioSource radio2;
+    public AudioSource radio3;
+    public AudioSource radio4;
+    public AudioSource radio5;
+    public AudioSource radio6;
+    public AudioSource radio7;
+    public AudioSource radio8;
+    private AudioSource currRadio;
     public AudioSource radioSound;
     public AudioSource putItem;
     public GameObject reticle;
     Light light;
+    private CollectibleManager reference;
+    List<int> collectedCollectibles;
     
     // Start is called before the first frame update
     void Start()
     {
+        reference = FindObjectOfType<CollectibleManager>();
+        collectedCollectibles = reference.collectedCollectibles;
         light = GameObject.FindWithTag("light").GetComponent<Light>();
         renderer = GetComponent<Renderer>();
         baseColor = renderer.material.color;
@@ -45,12 +60,42 @@ public class Target : MonoBehaviour
             lightOn = false;
         }
         lamp = camera.transform.Find("lamp").GetComponent<AudioSource>();
-        radio = camera.transform.Find("radio").GetComponent<AudioSource>();
+        radio1 = camera.transform.Find("radio1").GetComponent<AudioSource>();
+        radio2 = camera.transform.Find("radio2").GetComponent<AudioSource>();
+        radio3 = camera.transform.Find("radio3").GetComponent<AudioSource>();
+        radio4 = camera.transform.Find("radio4").GetComponent<AudioSource>();
+        radio5 = camera.transform.Find("radio5").GetComponent<AudioSource>();
+        radio6 = camera.transform.Find("radio6").GetComponent<AudioSource>();
+        radio7 = camera.transform.Find("radio7").GetComponent<AudioSource>();
+        radio8 = camera.transform.Find("radio8").GetComponent<AudioSource>();
         radioSound = camera.transform.Find("radioSound").GetComponent<AudioSource>();
         putItem = camera.transform.Find("putItem").GetComponent<AudioSource>();
         reticle = GameObject.FindWithTag("reticle");
+        switch(collectedCollectibles.Count){
+            case 0:
+                currRadio = radio1;
+                break;
+            case 1:
+                currRadio = radio2;
+                break;
+            case 2:
+                currRadio = radio3;
+                break;
+            case 3:
+                currRadio = radio4;
+                break;
+            case 4:
+                currRadio = radio5;
+                break;
+            case 5:
+                currRadio = radio6;
+                break;
+            case 6:
+                currRadio = radio7;
+                break;
+        }
+        currRadio.Play();
         radioOn = true;
-        radio.Play();
     }
 
     // Update is called once per frame
@@ -66,12 +111,18 @@ public class Target : MonoBehaviour
     }
     
     private void OnMouseDown(){
-        if(objSelected && selObj.CompareTag("badInspo")){
+        if(objSelected && selObj.CompareTag("badInspo") && collectedCollectibles.Count == 6){
             putItem.Play();
-           
-        } else if(objSelected && selObj.CompareTag("goodInspo")){
+            currRadio.Stop();
+            currRadio = radio8;
+            currRadio.Play();
+            radioOn = true;
+        } else if(objSelected && selObj.CompareTag("goodInspo") && collectedCollectibles.Count == 6){
             putItem.Play();
-        
+            currRadio.Stop();
+            currRadio = radio1;
+            currRadio.Play();
+            radioOn = true;
         }else if(objSelected && selObj.CompareTag("lamp")){
             lamp.Play();
             if(lightOn){
@@ -85,13 +136,13 @@ public class Target : MonoBehaviour
             if(radioOn){
                 //set radio volume to 0
                 radioSound.Play();
-                radio.volume = 0;
+                currRadio.Stop();
                 radioOn = false;
                 //play radio off sound
             } else {
                 //set radio volume to 100 or base volume
                 radioSound.Play();
-                radio.volume = 0.1f;
+                currRadio.Play();
                 radioOn = true;
                 //play radio on sound
             }

@@ -98,6 +98,9 @@ public class Target : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown("m")){
+            SceneManager.LoadScene("Menu");
+        }
     }
 
     private void OnMouseEnter(){
@@ -119,7 +122,8 @@ public class Target : MonoBehaviour
             radioOn = true;
             finalDecision.GetComponent<UnityEngine.UI.Text>().enabled = false;
             badDecision.GetComponent<UnityEngine.UI.Text>().enabled = true;
-        } else if(objSelected && selObj.CompareTag("goodInspo") && collectedCollectibles.Count == 6 && finalChoice == false){
+            SceneManager.LoadScene("BadEnding");
+            } else if(objSelected && selObj.CompareTag("goodInspo") && collectedCollectibles.Count == 6 && finalChoice == false){
             finalPaint.GetComponent<MeshRenderer>().enabled = false;
             finalPaintGood.GetComponent<MeshRenderer>().enabled = true;
             finalChoice = true;
@@ -130,6 +134,7 @@ public class Target : MonoBehaviour
             radioOn = true;
             finalDecision.GetComponent<UnityEngine.UI.Text>().enabled = false;
             goodDecision.GetComponent<UnityEngine.UI.Text>().enabled = true;
+            SceneManager.LoadScene("GoodEnding");
         }else if(objSelected && selObj.CompareTag("lamp")){
             lamp.Play();
             if(lightOn){

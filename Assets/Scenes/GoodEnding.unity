@@ -741,7 +741,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 649e8d6e205ac8847a41b71a0da30e55, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2253a60531808904aa6204f0bcd8fa14, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1049,7 +1049,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.7823233, g: 0.8018868, b: 0.71615046, a: 1}
-  m_Intensity: 2.65
+  m_Intensity: 1.59
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1091,7 +1091,7 @@ Light:
   m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 3.07
+  m_BounceIntensity: 1.53
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -1106,13 +1106,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 258320304}
-  m_LocalRotation: {x: -0.67816085, y: -0.57602215, z: 0.31815827, w: -0.32721817}
+  m_LocalRotation: {x: -0.71732736, y: -0.61760384, z: 0.21579696, w: -0.23966385}
   m_LocalPosition: {x: 57.008, y: 522.46, z: -1180}
   m_LocalScale: {x: 0.11096845, y: 0.11096845, z: 0.11096845}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 54.13, y: 185.342, z: 462.043}
+  m_LocalEulerAnglesHint: {x: 37.618, y: 180.981, z: 458.879}
 --- !u!1 &276202385
 GameObject:
   m_ObjectHideFlags: 0
@@ -3532,7 +3532,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905321925}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3962,7 +3962,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 8.2
+  m_Intensity: 5.56
   m_Range: 25.885029
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -4067,7 +4067,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e885cad731a8f6c4893b96d2be5b0a31, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2253a60531808904aa6204f0bcd8fa14, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -4477,7 +4477,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1263008628}
-  - component: {fileID: 1263008629}
   m_Layer: 0
   m_Name: Painting
   m_TagString: Untagged
@@ -4509,26 +4508,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1263008629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1263008627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c27fe3d6fc19d4c40920b601940ac2e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  paint1: {fileID: 1011384724}
-  paint2: {fileID: 544105477}
-  paint3: {fileID: 637213501}
-  paint4: {fileID: 1174422568}
-  paint5: {fileID: 2145240499}
-  paint6: {fileID: 834237841}
-  finalPaint: {fileID: 1305416294}
-  finalDecision: {fileID: 2007820137}
 --- !u!1 &1270253387
 GameObject:
   m_ObjectHideFlags: 0
@@ -7019,13 +6998,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1988347871}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7182,7 +7161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7242,7 +7221,6 @@ GameObject:
   - component: {fileID: 2009749019}
   - component: {fileID: 2009749018}
   - component: {fileID: 2009749017}
-  - component: {fileID: 2009749021}
   m_Layer: 0
   m_Name: goodInspiration
   m_TagString: goodInspo
@@ -7326,37 +7304,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
---- !u!114 &2009749021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2009749016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9500d8d55827a541876b934512c139f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  finalPaint: {fileID: 1305416294}
-  finalPaintGood: {fileID: 905321925}
-  finalPaintBad: {fileID: 769506913}
-  selObj: {fileID: 2009749016}
-  lamp: {fileID: 1285106275}
-  radio1: {fileID: 0}
-  radio2: {fileID: 0}
-  radio3: {fileID: 0}
-  radio4: {fileID: 0}
-  radio5: {fileID: 0}
-  radio6: {fileID: 0}
-  radio7: {fileID: 0}
-  radio8: {fileID: 0}
-  radioSound: {fileID: 1693333230}
-  putItem: {fileID: 1819957744}
-  reticle: {fileID: 1270253387}
-  finalDecision: {fileID: 2007820137}
-  goodDecision: {fileID: 1988347871}
-  badDecision: {fileID: 2082059461}
 --- !u!1 &2009887656
 GameObject:
   m_ObjectHideFlags: 0
@@ -7369,7 +7316,6 @@ GameObject:
   - component: {fileID: 2009887659}
   - component: {fileID: 2009887658}
   - component: {fileID: 2009887657}
-  - component: {fileID: 2009887661}
   m_Layer: 0
   m_Name: badInspiration
   m_TagString: badInspo
@@ -7453,37 +7399,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
---- !u!114 &2009887661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2009887656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9500d8d55827a541876b934512c139f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  finalPaint: {fileID: 1305416294}
-  finalPaintGood: {fileID: 905321925}
-  finalPaintBad: {fileID: 769506913}
-  selObj: {fileID: 2009887656}
-  lamp: {fileID: 1285106275}
-  radio1: {fileID: 0}
-  radio2: {fileID: 0}
-  radio3: {fileID: 0}
-  radio4: {fileID: 0}
-  radio5: {fileID: 0}
-  radio6: {fileID: 0}
-  radio7: {fileID: 0}
-  radio8: {fileID: 0}
-  radioSound: {fileID: 1693333230}
-  putItem: {fileID: 1819957744}
-  reticle: {fileID: 1270253387}
-  finalDecision: {fileID: 2007820137}
-  goodDecision: {fileID: 1988347871}
-  badDecision: {fileID: 2082059461}
 --- !u!1 &2031550927
 GameObject:
   m_ObjectHideFlags: 0
@@ -7753,7 +7668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8280,7 +8195,6 @@ GameObject:
   - component: {fileID: 5280635269568954732}
   - component: {fileID: 5544534151413805006}
   - component: {fileID: 7277873997440446058}
-  - component: {fileID: 1631325726985983502}
   - component: {fileID: 1631325726985983503}
   m_Layer: 0
   m_Name: pCube8
@@ -8289,37 +8203,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1631325726985983502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631325726985983501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9500d8d55827a541876b934512c139f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  finalPaint: {fileID: 1305416294}
-  finalPaintGood: {fileID: 905321925}
-  finalPaintBad: {fileID: 769506913}
-  selObj: {fileID: 1631325726985983501}
-  lamp: {fileID: 1285106275}
-  radio1: {fileID: 0}
-  radio2: {fileID: 0}
-  radio3: {fileID: 0}
-  radio4: {fileID: 0}
-  radio5: {fileID: 0}
-  radio6: {fileID: 0}
-  radio7: {fileID: 0}
-  radio8: {fileID: 0}
-  radioSound: {fileID: 1693333230}
-  putItem: {fileID: 1819957744}
-  reticle: {fileID: 1270253387}
-  finalDecision: {fileID: 2007820137}
-  goodDecision: {fileID: 1988347871}
-  badDecision: {fileID: 2082059461}
 --- !u!64 &1631325726985983503
 MeshCollider:
   m_ObjectHideFlags: 0

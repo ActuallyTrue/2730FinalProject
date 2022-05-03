@@ -7905,8 +7905,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 222}
-  m_SizeDelta: {x: 310.6163, y: 39.7932}
+  m_AnchoredPosition: {x: 0, y: 211.48828}
+  m_SizeDelta: {x: 310.6163, y: 55.1457}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1988347873
 MonoBehaviour:
@@ -7941,8 +7941,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You have returned the state of the world to peace through your thoughts
+  m_Text: 'You have returned the state of the world to peace through your thoughts
     of serenity...
+
+    Press "M" to return to menu'
 --- !u!222 &1988347874
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -20,8 +20,6 @@ public class FirstPersonMovement : MonoBehaviour
 
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
         transform.Translate(Vector3.right * Time.deltaTime * speed * horizontalInput);
-        if (Input.GetKeyDown(KeyCode.R)){
-            SceneManager.LoadScene("AwakeNew");
-        }
+       
     }
 }

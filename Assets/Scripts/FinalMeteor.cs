@@ -7,7 +7,6 @@ public class FinalMeteor : MonoBehaviour
 {
     public void EndLevel()
     {
-        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("AwakeNew");
     }
 }

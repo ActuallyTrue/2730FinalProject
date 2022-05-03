@@ -25,7 +25,6 @@ public class Meteor : MonoBehaviour
             PlayerMovement player = other.gameObject.GetComponent<PlayerMovement>();
             if (player.invincible == false)
             {
-                Cursor.lockState = CursorLockMode.None;
                 SceneManager.LoadScene("AwakeNew");
             }  
         }

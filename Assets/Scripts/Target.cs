@@ -99,6 +99,9 @@ public class Target : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown("m")){
+            Cursor.lockState = CursorLockMode.None;
+            CollectibleManager collectibleManager = FindObjectOfType<CollectibleManager>();
+            Destroy(collectibleManager.gameObject);
             SceneManager.LoadScene("Menu");
         }
     }

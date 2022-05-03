@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour {
         x = Input.GetAxisRaw("Horizontal");
         y = Input.GetAxisRaw("Vertical");
         jumping = Input.GetButton("Jump");
-        if(Input.GetButton("Invincibility"))
+        if(Input.GetButtonDown("Invincibility"))
         {
             invincible = !invincible;
         }

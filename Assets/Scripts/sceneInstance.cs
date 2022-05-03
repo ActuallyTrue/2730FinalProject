@@ -13,6 +13,8 @@ public class sceneInstance : MonoBehaviour
     public GameObject paint6;
     public GameObject finalPaint;
     public GameObject finalDecision;
+    public GameObject rain;
+    public AudioSource rainSound;
     private List<GameObject> paintSlices = new List<GameObject>();
     // Start is called before the first frame update
     void Start()
@@ -25,6 +27,10 @@ public class sceneInstance : MonoBehaviour
         paintSlices.Add(paint6);
         CollectibleManager reference = FindObjectOfType<CollectibleManager>();
         List<int> collectedCollectibles = reference.collectedCollectibles;
+        if(collectedCollectibles.Count >= 3){
+            rainSound.Play();
+            rain.transform.Translate(0,0,70);
+        }
         if(collectedCollectibles.Count > 0 && collectedCollectibles.Count < 6){
             for(int i = 0; i < collectedCollectibles.Count; i++){
                 paintSlices[collectedCollectibles[i] - 1].GetComponent<MeshRenderer>().enabled = true;

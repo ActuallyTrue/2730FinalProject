@@ -22,8 +22,12 @@ public class Meteor : MonoBehaviour
     private void OnCollisionStay(Collision other) {
         if (other.gameObject.CompareTag("Player"))
         {
-            Cursor.lockState = CursorLockMode.None;
-            SceneManager.LoadScene("AwakeNew");
+            PlayerMovement player = other.gameObject.GetComponent<PlayerMovement>();
+            if (player.invincible == false)
+            {
+                Cursor.lockState = CursorLockMode.None;
+                SceneManager.LoadScene("AwakeNew");
+            }  
         }
     }
 }

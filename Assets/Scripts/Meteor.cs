@@ -7,9 +7,13 @@ public class Meteor : MonoBehaviour
 {
     float deathTime = 7f;
     float timer;
+
+    public AudioSource flyingSound;
+    public AudioSource impactSound;
     // Start is called before the first frame update
     void Start()
     {
+        flyingSound = GetComponent<AudioSource>();
         timer = deathTime;
         Destroy(this.gameObject, deathTime);
     }
@@ -19,9 +23,18 @@ public class Meteor : MonoBehaviour
     {
     }
 
+    private void OnCollisionEnter(Collision other) {
+        if (other.gameObject.layer == 7)
+        {
+            flyingSound.Stop();
+            impactSound.Play();
+        }
+    }
+
     private void OnCollisionStay(Collision other) {
         if (other.gameObject.CompareTag("Player"))
         {
+            impactSound.Play();
             PlayerMovement player = other.gameObject.GetComponent<PlayerMovement>();
             if (player.invincible == false)
             {

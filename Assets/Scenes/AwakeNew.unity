@@ -1428,6 +1428,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1270253388}
+  - {fileID: 2007820140}
+  - {fileID: 1988347872}
+  - {fileID: 2082059462}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3459,6 +3462,9 @@ MonoBehaviour:
   radioSound: {fileID: 1693333230}
   putItem: {fileID: 1819957744}
   reticle: {fileID: 1270253387}
+  finalDecision: {fileID: 2007820137}
+  goodDecision: {fileID: 1988347871}
+  badDecision: {fileID: 2082059461}
 --- !u!64 &893636053
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4522,6 +4528,7 @@ MonoBehaviour:
   paint5: {fileID: 2145240499}
   paint6: {fileID: 834237841}
   finalPaint: {fileID: 1305416294}
+  finalDecision: {fileID: 2007820137}
 --- !u!1 &1270253387
 GameObject:
   m_ObjectHideFlags: 0
@@ -6934,6 +6941,9 @@ MonoBehaviour:
   radioSound: {fileID: 1693333230}
   putItem: {fileID: 1819957744}
   reticle: {fileID: 1270253387}
+  finalDecision: {fileID: 2007820137}
+  goodDecision: {fileID: 1988347871}
+  badDecision: {fileID: 2082059461}
 --- !u!1 &1986324598
 GameObject:
   m_ObjectHideFlags: 0
@@ -6965,6 +6975,86 @@ Transform:
   m_Father: {fileID: 1911373879}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1988347871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1988347872}
+  - component: {fileID: 1988347874}
+  - component: {fileID: 1988347873}
+  m_Layer: 5
+  m_Name: goodDecision
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1988347872
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988347871}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.369379, y: 1.369379, z: 1.369379}
+  m_Children: []
+  m_Father: {fileID: 294687547}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 222}
+  m_SizeDelta: {x: 310.6163, y: 39.7932}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1988347873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988347871}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 15
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 50
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: You have returned the state of the world to peace through your thoughts
+    of serenity...
+--- !u!222 &1988347874
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988347871}
+  m_CullTransparentMesh: 1
 --- !u!1 &1996549603
 GameObject:
   m_ObjectHideFlags: 0
@@ -7061,6 +7151,85 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8393883867462108715, guid: c4a63662b585aa04a97985fb48d45487, type: 3}
+--- !u!1 &2007820137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2007820140}
+  - component: {fileID: 2007820139}
+  - component: {fileID: 2007820138}
+  m_Layer: 5
+  m_Name: makeDecision
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2007820138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007820137}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 15
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 50
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Which painting inspires your final touches? (Click left or right wall painting)
+--- !u!222 &2007820139
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007820137}
+  m_CullTransparentMesh: 1
+--- !u!224 &2007820140
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007820137}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.369379, y: 1.369379, z: 1.369379}
+  m_Children: []
+  m_Father: {fileID: 294687547}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 222}
+  m_SizeDelta: {x: 310.6163, y: 39.7932}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2009749016
 GameObject:
   m_ObjectHideFlags: 0
@@ -7185,6 +7354,9 @@ MonoBehaviour:
   radioSound: {fileID: 1693333230}
   putItem: {fileID: 1819957744}
   reticle: {fileID: 1270253387}
+  finalDecision: {fileID: 2007820137}
+  goodDecision: {fileID: 1988347871}
+  badDecision: {fileID: 2082059461}
 --- !u!1 &2009887656
 GameObject:
   m_ObjectHideFlags: 0
@@ -7309,6 +7481,9 @@ MonoBehaviour:
   radioSound: {fileID: 1693333230}
   putItem: {fileID: 1819957744}
   reticle: {fileID: 1270253387}
+  finalDecision: {fileID: 2007820137}
+  goodDecision: {fileID: 1988347871}
+  badDecision: {fileID: 2082059461}
 --- !u!1 &2031550927
 GameObject:
   m_ObjectHideFlags: 0
@@ -7528,6 +7703,85 @@ Transform:
   m_Father: {fileID: 2053620303}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2082059461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2082059462}
+  - component: {fileID: 2082059464}
+  - component: {fileID: 2082059463}
+  m_Layer: 5
+  m_Name: badDecision
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2082059462
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082059461}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.369379, y: 1.369379, z: 1.369379}
+  m_Children: []
+  m_Father: {fileID: 294687547}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 222}
+  m_SizeDelta: {x: 310.6163, y: 39.7932}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2082059463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082059461}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 15
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 50
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: You have summoned the end of time through your thoughts of malice and malcontent...
+--- !u!222 &2082059464
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082059461}
+  m_CullTransparentMesh: 1
 --- !u!1 &2112116479
 GameObject:
   m_ObjectHideFlags: 0
@@ -8063,6 +8317,9 @@ MonoBehaviour:
   radioSound: {fileID: 1693333230}
   putItem: {fileID: 1819957744}
   reticle: {fileID: 1270253387}
+  finalDecision: {fileID: 2007820137}
+  goodDecision: {fileID: 1988347871}
+  badDecision: {fileID: 2082059461}
 --- !u!64 &1631325726985983503
 MeshCollider:
   m_ObjectHideFlags: 0

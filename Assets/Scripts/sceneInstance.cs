@@ -12,6 +12,7 @@ public class sceneInstance : MonoBehaviour
     public GameObject paint5;
     public GameObject paint6;
     public GameObject finalPaint;
+    public GameObject finalDecision;
     private List<GameObject> paintSlices = new List<GameObject>();
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,7 @@ public class sceneInstance : MonoBehaviour
             }
         }else if(collectedCollectibles.Count == 6){
             finalPaint.GetComponent<MeshRenderer>().enabled = true;
+            finalDecision.GetComponent<UnityEngine.UI.Text>().enabled = true;
         }
         
     }

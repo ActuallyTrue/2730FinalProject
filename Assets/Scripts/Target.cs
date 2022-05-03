@@ -14,12 +14,6 @@ public class Target : MonoBehaviour
     private GameObject player;
     private GameObject camera;
     private bool objSelected;
-    private Vector3 basePos;
-    private Vector3 baseRot;
-    private Vector3 holdingPos;
-    private Vector3 holdingRot;
-    private Vector3 camRot;
-    private Vector3 camHoldingRot;
     private bool looking;
     private bool lightOn;
     private bool radioOn;
@@ -39,10 +33,15 @@ public class Target : MonoBehaviour
     Light light;
     private CollectibleManager reference;
     List<int> collectedCollectibles;
+    private bool finalChoice;
+    public GameObject finalDecision;
+    public GameObject goodDecision;
+    public GameObject badDecision;
     
     // Start is called before the first frame update
     void Start()
     {
+        finalChoice = false;
         reference = FindObjectOfType<CollectibleManager>();
         collectedCollectibles = reference.collectedCollectibles;
         light = GameObject.FindWithTag("light").GetComponent<Light>();
@@ -50,8 +49,6 @@ public class Target : MonoBehaviour
         baseColor = renderer.material.color;
         player = GameObject.FindWithTag("Player");
         objSelected = false;
-        basePos = selObj.transform.position;
-        baseRot = selObj.transform.eulerAngles;
         camera = GameObject.FindWithTag("MainCamera");
         looking = false;
         if(light.enabled){
@@ -111,18 +108,28 @@ public class Target : MonoBehaviour
     }
     
     private void OnMouseDown(){
-        if(objSelected && selObj.CompareTag("badInspo") && collectedCollectibles.Count == 6){
+        if(objSelected && selObj.CompareTag("badInspo") && collectedCollectibles.Count == 6 && finalChoice == false){
+            finalPaint.GetComponent<MeshRenderer>().enabled = false;
+            finalPaintBad.GetComponent<MeshRenderer>().enabled = true;
+            finalChoice = true;
             putItem.Play();
             currRadio.Stop();
             currRadio = radio8;
             currRadio.Play();
             radioOn = true;
-        } else if(objSelected && selObj.CompareTag("goodInspo") && collectedCollectibles.Count == 6){
+            finalDecision.GetComponent<UnityEngine.UI.Text>().enabled = false;
+            badDecision.GetComponent<UnityEngine.UI.Text>().enabled = true;
+        } else if(objSelected && selObj.CompareTag("goodInspo") && collectedCollectibles.Count == 6 && finalChoice == false){
+            finalPaint.GetComponent<MeshRenderer>().enabled = false;
+            finalPaintGood.GetComponent<MeshRenderer>().enabled = true;
+            finalChoice = true;
             putItem.Play();
             currRadio.Stop();
             currRadio = radio1;
             currRadio.Play();
             radioOn = true;
+            finalDecision.GetComponent<UnityEngine.UI.Text>().enabled = false;
+            goodDecision.GetComponent<UnityEngine.UI.Text>().enabled = true;
         }else if(objSelected && selObj.CompareTag("lamp")){
             lamp.Play();
             if(lightOn){
